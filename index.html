@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="An interactable to do list" />
+  <title>To Do List</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<main>
+  
+  <h1>To Do List:</h1>
+
+  <div class="flexbox-container">
+    <header>Unfinished</header>
+    <header>Finished</header>
+  </div>
+
+  <div class="flexbox-container tasks-row">
+
+    <div class="unfinished-box">
+    <ul id="unfinished-list">
+      <!-- Items will be magically added here -->
+    </ul>
+    </div>
+
+    <div class="finished-box">
+    <ul id="finished-list">
+      <!-- Items will be magically sent here when finished -->
+    </ul>
+    </div>
+  </div>
+
+</main>
+
+  <div class="flexbox-container">
+    <div class="add-an-item-box">
+      <form id="todo-form">
+        <label for="item">Add an item:</label>
+        <input type="text" id="item" name="item" required />
+        <button class="submit-button" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
